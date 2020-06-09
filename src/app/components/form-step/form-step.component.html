@@ -9,7 +9,7 @@
       <hr class="hrModal">
       <div class="btnTyc">
         <div class="squareModal">
-                Es requisito indispensable que el solicitante, entendido este como cualquier persona natural o jurídica que acceda al presente Portal (Mazda/Vardí) y desee iniciar una solicitud para estudio de viabilidad de financiación de vehículo automotor con Santander Consumer Finance S.A.S (En adelante “Santander Consumer”), entienda y acepte de manera expresa, voluntaria e irrevocable los términos y condiciones que a continuación se indican:<br><br>
+                Es requisito indispensable que el solicitante, entendido este como cualquier persona natural o jurídica que acceda al presente Portal (Kia) y desee iniciar una solicitud para estudio de viabilidad de financiación de vehículo automotor con Santander Consumer Finance S.A.S (En adelante “Santander Consumer”), entienda y acepte de manera expresa, voluntaria e irrevocable los términos y condiciones que a continuación se indican:<br><br>
                 El presente Portal es solo un canal para recopilar información personal del solicitante, con la finalidad de poder realizar el estudio crediticio del mismo para la determinación de la aprobación o no del crédito.<br><br>                            
                 El otorgamiento de los planes de financiación anunciados así como las tasas ofrecidas, están sujetas al cumplimiento de las políticas de crédito de las entidades financieras aliadas de Santander Consumer y al perfil crediticio del solicitante.<br><br>
                 
@@ -140,6 +140,7 @@
                                             </div>                    
                                         
                                         <div class="col-12 col-sm-12 col-md-12 contButton">
+                                                <img [src]="const.logoSantander" alt="">
                                                 <button mat-button class="full-width siguiente" [disabled]="formPs.invalid || valorCuota === 0 || !cuotas" matStepperNext>CONTINUAR</button>
                                         </div>
                                         
@@ -311,7 +312,6 @@
                         <div class="checkTycOk col-12 col-sm-12 text-center">
                             <mat-checkbox 
                             required
-                            color="primary"
                             value="" 
                             id="defaultCheck1"
                             name="AutorizaConsultaCentrales"
@@ -367,7 +367,7 @@
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-12 contButton">
-                    <button mat-button class="full-width siguiente" id="stepTwo" (click)="reload()">VOLVER A MAZDA/VARDÍ</button>
+                    <button mat-button class="full-width siguiente" id="stepTwo" (click)="reload()">VOLVER A KIA</button>
                 </div>
           </div>
         </div>

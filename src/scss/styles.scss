@@ -65,7 +65,7 @@
     opacity: 0;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
-    background-color: $color-mercadolibre;
+    background-color: $color-white;
     z-index: 0;
     height: 100%;
     position: absolute;
@@ -296,7 +296,17 @@ button:focus {
 }
 
 .contButton{
+    img{
+        width: 70%;
+        display: none;
+        @include tablet(){
+            display: block;
+        }
+}
+
+.contButton{
     margin-top: 25px;
+    }
     button.anterior{
         display: none;
         color: $color-btn-activo;
@@ -441,13 +451,14 @@ button{
 }
 
 .encMercadolibre{
-    background-color: $color-negro;
+    background-color: $color-white;
     display: grid;
     grid-template-columns: auto 1fr auto;
     position: fixed !important;
     width: 100%;
     z-index: 2;
     top: 0;
+    border-bottom: 3px solid $color-mercadolibre;
     @include tablet(){
         grid-template-columns: 27% 1fr 27%;
     }
@@ -484,12 +495,12 @@ button{
 
     img.mercadolibreT{
         display: block;
-        grid-column: 3;
+        grid-column: 1;
         align-self: center;
         justify-self: center;
         height: 80px;
         padding: 3%;
-        padding: 20% 10%;
+        padding: 20% 20%;
 
         @include tablet(){
             padding: 10% 10%;
@@ -539,7 +550,7 @@ button{
         line-height: 1.6;
         text-align: center;
         @include tablet(){
-            color: $color-white;
+            color: $color-negro;
         }
         @include deskopt(){
             top: -14px;
@@ -785,6 +796,10 @@ button{
     @include tablet(){
         padding: 20px;
     }
+}
+
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: $numeroStep !important;
 }
   
 

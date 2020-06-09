@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../../../environments/environment.prod';
 import { CentralesService } from '../../services/centrales.service';
-
+import { constantes } from '../../../app/constantes';
 import { registerLocaleData } from '@angular/common';
 import es from '@angular/common/locales/es';
 
@@ -12,6 +12,8 @@ import es from '@angular/common/locales/es';
   styleUrls: ['./form-step.component.scss']
 })
 export class FormStepComponent{
+
+  const = constantes;
 
   constructor(private centrales: CentralesService) { }
 
@@ -125,7 +127,7 @@ export class FormStepComponent{
 
    reload()
     {
-    window.location.href="https://www.mazdavardi.com.co/"; 
+    window.location.href="https://www.kia.com/"; 
     }
 
     verDetalles(){
