@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from '../../../environments/environment.prod';
+import { environment } from '../../../environments/environment';
 import { CentralesService } from '../../services/centrales.service';
 import { constantes } from '../../../app/constantes';
 import { registerLocaleData } from '@angular/common';
