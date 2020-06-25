@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from '../../../environments/environment.prod';
+import { environment } from '../../../environments/environment';
 import { CentralesService } from '../../services/centrales.service';
 import { constantes } from '../../../app/constantes';
 import { registerLocaleData } from '@angular/common';
@@ -63,7 +63,9 @@ export class FormStepComponent{
       AutorizaConsultaCentrales: false,  
       AutorizaMareigua: false,  
       ValorFinanciar: null,
-      IdentificacionVendedor: null  
+      IdentificacionVendedor: null,
+      ConcesionarioRadicacion: null,
+      UsuarioRadica: null
     }
   }
 
@@ -83,6 +85,12 @@ export class FormStepComponent{
 
   sendCentrales(this){
     this.editable = false;
+
+    /* Datos nuevos incorporados */
+    this.contacto.OtrosDatos.ConcesionarioRadicacion = 43;
+    this.contacto.OtrosDatos.UsuarioRadica = 'l.gonzalezm';
+    this.contacto.OtrosDatos.IdentificacionVendedor = 90148;
+    
     
     if(this.contacto.DatosFinancieros.ActividadEconomica){
       if(this.contacto.DatosFinancieros.ActividadEconomica === 1){
@@ -198,6 +206,8 @@ export interface OtrosDatos {
   AutorizaMareigua?: Boolean;  
   ValorFinanciar?: Number;
   IdentificacionVendedor?: Number;
+  ConcesionarioRadicacion?: Number;
+  UsuarioRadica: String;
 }
 
 export interface ContactoInterface{
