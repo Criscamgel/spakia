@@ -64,6 +64,10 @@ export class FormStepComponent{
       AutorizaMareigua: false,  
       ValorFinanciar: null,
       IdentificacionVendedor: null  
+    },
+
+    DatosVehiculo: {
+      Marca: 10
     }
   }
 
@@ -200,9 +204,15 @@ export interface OtrosDatos {
   IdentificacionVendedor?: Number;
 }
 
+export interface DatosVehiculo {
+  
+  Marca: number;
+}
+
 export interface ContactoInterface{
 
   DatosBasicos?:DatosBasicos;
   DatosFinancieros?:DatosFinancieros;
   OtrosDatos?:OtrosDatos;
+  DatosVehiculo:DatosVehiculo;
 }
