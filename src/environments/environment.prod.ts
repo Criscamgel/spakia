@@ -15,7 +15,7 @@ export const environment = {
    ocupaciones:[
     {value:null, name:"Tipo de ocupación"},
     {value:1, name:"Pensionado"}, /* 15 */
-    {value:11, name:"Empleado"}, /* 16 */
+    {value:1, name:"Empleado"}, /* 16 */
     {value:2, name:"Independiente"} /* 3 */
    ],
 
