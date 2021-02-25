@@ -15,7 +15,7 @@ export class FormStepComponent{
 
   const = constantes;
 
-  constructor(private centrales: CentralesService) { }
+  constructor(public centrales: CentralesService) { }
 
   ngOnInit() {
     registerLocaleData( es );
