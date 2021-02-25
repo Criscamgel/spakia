@@ -8,7 +8,15 @@ import { ScanparamsService } from './services/scan-params.service';
 })
 export class AppComponent {
   title = 'tucarroform';
+  viewSplash = true;
   constructor(public scanParams: ScanparamsService){
     this.scanParams.getParams();
+   /*  this.changedViewSplash(); */
   }
+
+  /* changedViewSplash(){
+    setTimeout(() => {
+      this.viewSplash = false;
+    }, 2000);
+  } */
 }

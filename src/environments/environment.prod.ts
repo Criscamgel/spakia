@@ -30,6 +30,6 @@ export const environment = {
   urlVp: "https://api.premiercredit.co:11444/premierservices_api_ext/api/viabilizacion/getViabilizacionModular",
 
   /* Credentials */
-  userpass: "awBpAGEAOgB2AGUAbgB0AGEAcwBrADEANAA=",
+  userpass: "QwBhAGwAaQBtAGEATQA6AEsANAAxADEAbQA1AC4A",
   respuesta: {}
 };
